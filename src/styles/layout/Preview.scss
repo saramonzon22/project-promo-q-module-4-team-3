@@ -1,0 +1,144 @@
+@import '../core/variables.scss';
+@import './Design.scss';
+
+
+.preview {
+  height: 60vh;
+  width: 100%;
+  background: linear-gradient(to bottom, $main-silver, $secondary-silver);
+  background-image: url('../../images/roller.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media all and (min-width: 768px) {
+    width: 50%;
+    height: 100vh;
+    margin: 20px 40px 20px 30px;
+    border-radius: 6px;
+  }
+  &__button {
+    height: 30px;
+    border-radius: 15px;
+    border: solid 1px white;
+    color: $text-darkgrey;
+    font-size: 12px;
+    background-color: $main-silver;
+    text-transform: uppercase;
+    padding: 8px 12px 10px 10px;
+    font-family: OpenSans;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+}
+
+.fa-trash-can {
+  width: 11px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.card {
+  width: 240px;
+  height: 329px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 2px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  position: relative;
+
+  &__rectangle {
+    width: 5px;
+    height: 42px;
+    background-color: $medium-green;
+    position: absolute;
+    top: 23px;
+  }
+
+  &__name {
+    color: $dark-green;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-top: 21px;
+    text-align: left;
+  }
+
+  &__job {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: $text-darkgrey;
+    margin-left: 20px;
+    margin-top: 4px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  &__photo {
+    width: 240px;
+    height: 200px;
+    margin-top: 10px;
+  }
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-left: 20px;
+  color: $dark-green;
+
+  &__icon {
+    margin-top: 10px;
+    border-radius: 16px;
+    border: solid 2px $light-green;
+    text-align: center;
+    padding: 5px;
+  }
+}
+
+.socialmedia a {
+  color: $dark-green;
+}
+
+.palette1{
+  .card__rectangle{
+    background-color: $medium-green;
+  }
+  .card__name{
+    color: $dark-green;
+  }
+  .socialmedia__icon{
+    color:$dark-green;
+    border:solid 2px $light-green;
+  }
+}
+
+.palette2{
+  .card__rectangle{
+    background-color: $dark-red;
+  }
+  .card__name{
+    color: $dark-brown;
+  }
+  .socialmedia__icon{
+    color:$dark-brown;
+    border:solid 2px $red;
+  }
+}
+
+.palette3{
+  .card__rectangle{
+    background-color: $medium-orange;
+  }
+  .card__name{
+    color: $grey-grey;
+  }
+  .socialmedia__icon{
+    color:$grey-grey;
+    border:solid 2px $light-grey;
+  }
+}

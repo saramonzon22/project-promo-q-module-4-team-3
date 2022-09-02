@@ -1,0 +1,25 @@
+// Quién trabaje aquí que no escriba nada y se estiliza cuando nos reunamos :3
+// Poned solo colores sin nombrar ninguna variable
+.main {
+  width: 100%;
+  background-image: linear-gradient(to bottom, $main-background, $white 9%);
+  &__landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-background;
+    padding: 0px 26px 0 26px;
+    height: 75vh;
+  }
+  @media all and(min-width:768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    // width: 100vw;
+  }
+}
+
+// body {
+//   height: 100vh;
+// }

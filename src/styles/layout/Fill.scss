@@ -1,0 +1,120 @@
+@import "../core/variables";
+@import "./Preview.scss";
+
+.fieldset__2 {
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #d8d8d8;
+  .label {
+    color: $dark-green;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+  }
+  &--legend {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    margin: 20px 0 25px;
+    width: 100%;
+    cursor: pointer;
+  }
+  &--iconKeyboard {
+    color: $main-orange;
+    width: 21px;
+    height: 18px;
+  }
+  &--iconArrow {
+    width: 16px;
+    height: 18px;
+    color: $dark-green;
+  }
+  &--title {
+    text-transform: uppercase;
+    margin-left: 10px;
+    width: 100%;
+    font-weight: 600px;
+    font-size: 18px;
+    color: $text-darkgrey;
+    font-family: "Open Sans", sans-serif;
+  }
+  &--input {
+    border: solid 1px $light-green;
+    height: 30px;
+    margin: 7px 0 20px;
+  }
+  &--addImageLabel {
+  }
+  &--addImageButton {
+  }
+  &--div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.square {
+  width: 30px;
+  height: 30px;
+  border: solid 1px $light-green;
+  position: absolute;
+  left: 260px;
+  top: 398px;
+  // display: none;
+}
+.future_js {
+  // width: 30px;
+  // height: 30px;
+  // border: solid;
+  // border-color: green;
+  // margin: 7px 0 20px;
+  display: none;
+}
+.wrapperImageFieldset2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.action {
+  text-align: center;
+}
+.action__upload-btn {
+  text-decoration: none;
+  background-color: $main-orange;
+  font-weight: 100;
+  text-align: center;
+  line-height: 1.75;
+  border-radius: 5px;
+  color: $white;
+  padding: 3px 20px 3px 20px;
+  cursor: pointer;
+}
+.action__hiddenField {
+  /* Ocultamos el input de tipo "file" porque no podemos 
+  darle los estilos que queremos */
+  display: none;
+}
+
+.profile {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.profile__image,
+.profile__preview {
+  background-image: url('../../images/astronaut2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #ccc;
+}
+.profile__image {
+  width: 240px;
+  height: 200px;
+}
+
+.profile__preview {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}

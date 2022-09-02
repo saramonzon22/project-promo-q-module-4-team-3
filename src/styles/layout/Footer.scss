@@ -1,0 +1,43 @@
+@import '../core/variables.scss';
+
+.footer {
+  width: 100%;
+  height: 12.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-top: solid 1px #d8d8d8;
+
+  @media all and(min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__copyright {
+    margin-top: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    opacity: 0.5;
+    color: $text-lightgrey;
+
+    @media all and(min-width: 768px) {
+      margin-left: 40px;
+      margin-top: 10px;
+    }
+  }
+
+  &__logo {
+    margin-top: 12px;
+    width: 103px;
+    height: 40px;
+    margin-bottom: 15px;
+
+    @media all and(min-width: 768px) {
+      margin-right: 40px;
+      margin-top: 14px;
+    }
+  }
+}

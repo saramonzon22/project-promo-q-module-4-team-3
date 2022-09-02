@@ -1,0 +1,99 @@
+@import '../core/variables.scss';
+
+.landing {
+  line-height: 2;
+
+  &__article {
+    text-align: center;
+
+    &--title {
+      color: $main-orange;
+      font-family: "Merriweather", serif;
+      font-size: 19.2px;
+      align-self: center;
+      @media all and (min-width: 768px) {
+        font-size: 24px;
+        
+      }
+    }
+    &--parragraph {
+      font-family: "Open Sans", sans-serif;
+      color: $dark-green;
+      font-size: 12.8px;
+      line-height: 1.5;
+      max-width: 39ch;
+      margin-top: 10px;
+      @media all and (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__logo {
+    width: 250px;
+    margin-bottom: 35.4px;
+    @media all and (min-width: 768px) {
+      width: 380px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+    &--img {
+      width: 100%;
+    }
+  }
+  &__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border: solid 1.6px rgba(225,115,52, 0.21);
+    border-radius: 4px;
+    margin-top: 18px;
+    height: 73px;
+    width: 268px;
+    @media all and (min-width: 768px) {
+      height: 86px;
+      width: 325px;
+      margin-top: 27px;
+      gap: 40px;
+    }
+    &--description {
+      color: $text-darkgrey;
+      font-family: "Open Sans", sans-serif;
+      font-size: 12.8px;
+      @media all and (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__button {
+    width: 129px;
+    height: 32px;
+    background-color: $medium-green;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    line-height: 2;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    color: $white;
+    margin: 40px;
+    @media all and (min-width: 768px) {
+      margin: 60px;
+      
+    }
+  }
+}
+
+.landing__wrapper {
+  text-align: center;
+  padding: 15px 0 18px 0;
+}
+
+.landing__icon {
+  height: 32px;
+  color: $main-orange;
+  
+}

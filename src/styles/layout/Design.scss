@@ -1,0 +1,128 @@
+@import "../core/variables";
+
+
+.fieldset__1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #d8d8d8;
+  &--title {
+    text-transform: uppercase;
+    margin-left: 10px;
+    width: 100%;
+    font-weight: 600px;
+    font-size: 18px;
+    color: $text-darkgrey;
+    font-family: "Open Sans", sans-serif;
+  }
+  &--legend {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    margin: 20px 0 25px;
+    width: 100%;
+    cursor: pointer;
+  }
+  &--iconSquare {
+    color: $main-orange;
+    width: 21px;
+    height: 18px;
+  }
+  &--iconArrow {
+    width: 16px;
+    height: 18px;
+    color: #114e4e;
+  }
+}
+
+.range {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  &__title {
+    margin-left: 19px;
+    color: #54585a;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+.pantone1 {
+  width: 117px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  &__input {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    padding: 1px;
+  }
+  &__first {
+    width: 30px;
+    height: 25px;
+    background-color: #114e4e;
+  }
+  &__second {
+    width: 30px;
+    height: 25px;
+    background-color: #438792;
+  }
+
+  &__third {
+    width: 30px;
+    height: 25px;
+    background-color: #a2deaf;
+  }
+}
+.pantone2 {
+  width: 117px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  &__first {
+    width: 30px;
+    height: 25px;
+    background-color: #420101;
+  }
+  &__second {
+    width: 30px;
+    height: 25px;
+    background-color: #bd1010;
+  }
+
+  &__third {
+    width: 30px;
+    height: 25px;
+    background-color: #e95626;
+  }
+}
+.pantone3 {
+  width: 117px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  &__first {
+    width: 30px;
+    height: 25px;
+    background-color: #3e5b65;
+  }
+  &__second {
+    width: 30px;
+    height: 25px;
+    background-color: #eab052;
+  }
+
+  &__third {
+    width: 30px;
+    height: 25px;
+    background-color: #a0c0cf;
+  }
+}
+
+// input[type='radio']:checked:after{
+//     background-color: grey;
+// }

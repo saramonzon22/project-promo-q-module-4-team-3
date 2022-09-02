@@ -1,0 +1,136 @@
+@import "../core/variables";
+
+.fieldset-3 {
+  width: 100%;
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: solid 1px #d8d8d8;
+
+  &__legend {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    color: #54585a;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+  }
+}
+
+.fieldset-3__legend--title {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 600px;
+  color: $text-darkgrey;
+  font-family: "Open Sans", sans-serif;
+}
+
+.fieldset-3__button {
+  background-color: #e17334;
+  height: 50px;
+  width: 199px;
+  border-radius: 12px;
+  border: none;
+  margin-top: 30px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+.grey {
+  background-color: #d5d5d5;
+}
+
+.fa-address-card {
+  margin-right: 10px;
+}
+
+.fieldset-3__div {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  border-style: none;
+}
+.fa-share-nodes {
+  color: #e17334;
+  width: 16px;
+  height: 18px;
+}
+/*FIELDSET-4 STYLES*/
+
+.fieldset-4 {
+  width: 100%;
+  height: 312px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__legend {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    font-size: 18px;
+    color: #54585a;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.fieldset-4__legend--title {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.fieldset-4__div {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  border-style: none;
+}
+.fieldset-4__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fieldset-4___article--title {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #54585a;
+}
+.fieldset-4__article--paragraph {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  color: #e17334;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.fieldset-4__article--button {
+  background-color: #00a0f5;
+  height: 30px;
+  width: 181px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Open Sans";
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.fa-twitter {
+  margin: 8px 10px 0 5px;
+  
+}
