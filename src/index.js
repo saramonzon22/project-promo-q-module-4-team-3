@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const Database = require('better-sqlite3');
 const { restart } = require("nodemon");
 const { v4: uuidv4 } = require("uuid");
 const saveCard = [];
@@ -14,11 +15,14 @@ server.use(
 
 server.set("view engine", "ejs");
 
-const serverPort = 4000;
+const serverPort = process.env.PORT || 4000;
 server.listen(serverPort, () => {
   console.log(`Server listening at http://localhost${serverPort}`);
 });
 
+// database
+
+const db = new Database('./src/data/database.db', { verbose: console.log, });
 //endpoints
 //fetch tipo POST (enviar datos usuaria)
 server.post("/card", (req, resp) => {
@@ -56,15 +60,23 @@ server.post("/card", (req, resp) => {
 //fetch tipo GET (devolver url de tarjeta)
 
 server.get("/card/:id", (req, resp) => {
-  const tarjetaEncontrada = saveCard.find(
+  const idParams = req.query.id;
+  console.log(req.query.id);
+  const query = db.prepare(`SELECT * FROM card WHERE id = ?`);
+  const cardQuery = query.get(idParams);
+  console.log(cardQuery);
+  /* const tarjetaEncontrada = saveCard.find(
     (oneCard) => oneCard.id === req.params.id
   );
   console.log(saveCard);
-  console.log(tarjetaEncontrada);
+  console.log(tarjetaEncontrada); */
 
-  resp.render("finalCard", tarjetaEncontrada);
+  resp.render("finalCard", cardQuery);
 });
 
 //Servidor de ficheros estáticos
 const staticServer = "./src/public-react/";
 server.use(express.static(staticServer));
+
+const staticCss = './src/public-css/';
+server.use(express.static(staticCss));
