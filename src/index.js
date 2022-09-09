@@ -3,6 +3,7 @@ const cors = require("cors");
 const Database = require("better-sqlite3");
 const { restart } = require("nodemon");
 const { v4: uuidv4 } = require("uuid");
+const path = require("path"); //viene con NodeJS, es para que las rutas sean robustas
 
 const server = express();
 server.use(cors());
@@ -16,7 +17,9 @@ server.set("view engine", "ejs");
 
 const serverPort = process.env.PORT || 4000;
 server.listen(serverPort, () => {
-  console.log(`Server listening at http://localhost${serverPort}`);
+  console.log(
+    `Server listening at https://promo-q-module-4-team-3.herokuapp.com/`
+  );
 });
 
 // database
@@ -64,7 +67,7 @@ server.post("/card", (req, resp) => {
     if (results !== undefined) {
       //enviar la resp
       const respSuccess = {
-        cardURL: `http://localhost:4000/card/${newCard.id}`,
+        cardURL: `https://promo-q-module-4-team-3.herokuapp.com/card/${newCard.id}`,
         success: true,
       };
       resp.json(respSuccess);
@@ -79,6 +82,10 @@ server.get("/card/:id", (req, resp) => {
   const cardUrlParams = query.get(req.params.id);
 
   resp.render("finalCard", cardUrlParams);
+});
+
+server.get("/card", (req, res) => {
+  res.sendFile(path.join(__dirname, "/public-react/index.html"));
 });
 
 //Servidor de ficheros estáticos

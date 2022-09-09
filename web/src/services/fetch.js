@@ -1,5 +1,5 @@
 const getData = (data) => {
-  return fetch("http://localhost:4000/card/", {
+  return fetch("https://promo-q-module-4-team-3.herokuapp.com/card/", {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
