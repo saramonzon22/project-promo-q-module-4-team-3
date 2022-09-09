@@ -1,22 +1,22 @@
 import "../styles/layout/Share.scss";
-import Twitter from "./Twitter";
+
 import getData from "../services/fetch.js";
 
 function Share(props) {
-
-
   const handleClick = () => {
-    props.handleShareCol()
-  }
+    props.handleShareCol();
+  };
 
   const handleCreateCard = (ev) => {
     ev.preventDefault();
     props.handleShare();
-
   };
   return (
     <fieldset className="fieldset-3">
-      <legend className="js_title_share fieldset-3__legend" onClick={handleClick}>
+      <legend
+        className="js_title_share fieldset-3__legend"
+        onClick={handleClick}
+      >
         <i className="fa-solid fa-share-nodes"></i>
         <h2 className="fieldset-3__legend--title">comparte</h2>
         <i className="js_arrow_share fa-solid fa-rocket fieldset__2--iconArrow"></i>
@@ -45,14 +45,14 @@ function Share(props) {
             <a
               className="js_share_twitter fieldset-4__article--button"
               target="_blank"
+              href={`https://twitter.com/intent/tweet?text=Os%20comparto%20mi%20tarjeta%20profesional&url=
+              ${props.resultCard.cardURL}`}
             >
               <i className="fa-brands fa-twitter"></i>Compartir en Twitter
             </a>
-
           </article>
-        </>)}
-
-      {/*<Twitter resultCard={props.resultCard} /> */}
+        </>
+      )}
     </fieldset>
   );
 }

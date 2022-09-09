@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "./static/css/main.f789f651.css",
-    "main.js": "./static/js/main.dcc6833a.js",
+    "main.js": "./static/js/main.fc57a4e6.js",
     "static/media/roller.png": "./static/media/roller.0692af01d39058274989.png",
     "static/media/astronaut2.png": "./static/media/astronaut2.7821d76f5efda899725c.png",
     "static/media/commit_cards_logo.png": "./static/media/commit_cards_logo.0e5b6a0169d8030d9c10.png",
     "static/media/commit_land_logo.png": "./static/media/commit_land_logo.e6f1118bd93f098c0706.png",
     "index.html": "./index.html",
     "main.f789f651.css.map": "./static/css/main.f789f651.css.map",
-    "main.dcc6833a.js.map": "./static/js/main.dcc6833a.js.map"
+    "main.fc57a4e6.js.map": "./static/js/main.fc57a4e6.js.map"
   },
   "entrypoints": [
     "static/css/main.f789f651.css",
-    "static/js/main.dcc6833a.js"
+    "static/js/main.fc57a4e6.js"
   ]
 }
