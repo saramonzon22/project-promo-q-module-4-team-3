@@ -35,11 +35,14 @@ function Share(props) {
             </h2>
 
             <div className="js_div_share">
-              <p className="js_paragraph fieldset-4__article--paragraph">
+              <a
+                href={`${props.resultCard.cardURL}`}
+                className="js_paragraph fieldset-4__article--paragraph"
+              >
                 {props.resultCard.success === true
                   ? props.resultCard.cardURL
                   : props.resultCard.error}
-              </p>
+              </a>
             </div>
 
             <a
