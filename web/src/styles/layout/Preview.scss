@@ -3,19 +3,20 @@
 
 
 .preview {
-  height: 60vh;
+  min-height: 60vh;
   width: 100%;
   background: linear-gradient(to bottom, $main-silver, $secondary-silver);
   background-image: url('../../images/roller.png');
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   @media all and (min-width: 768px) {
     width: 50%;
-    height: 100vh;
+    height: 80vh;
     margin: 20px 40px 20px 30px;
     border-radius: 6px;
   }
@@ -140,5 +141,29 @@
   .socialmedia__icon{
     color:$grey-grey;
     border:solid 2px $light-grey;
+  }
+}
+.palette4{
+  .card__rectangle{
+    background-color: #D70270;
+  }
+  .card__name{
+    color: #744F97;
+  }
+  .socialmedia__icon{
+    color: #744F97;
+    border:solid 2px #0039A9;
+  }
+}
+.palette5{
+  .card__rectangle{
+    background-color: #55CDFC;
+  }
+  .card__name{
+    color: #F7A8B8;
+  }
+  .socialmedia__icon{
+    color: #F7A8B8;
+    border:solid 2px #55CDFC;
   }
 }

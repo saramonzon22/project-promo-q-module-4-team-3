@@ -19,7 +19,7 @@ function Share(props) {
       >
         <i className="fa-solid fa-share-nodes"></i>
         <h2 className="fieldset-3__legend--title">comparte</h2>
-        <i className="js_arrow_share fa-solid fa-rocket fieldset__2--iconArrow"></i>
+        <i className="js_arrow_design fa-solid fa-flag fieldset__3--iconArrow arrow-down"></i>
       </legend>
       {props.openShare && (
         <>

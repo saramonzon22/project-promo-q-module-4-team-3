@@ -20,7 +20,7 @@ function Fill(props) {
       >
         <i className="fa-solid fa-keyboard fieldset__2--iconKeyboard"></i>
         <h2 className="fieldset__2--title">Rellena</h2>
-        <i className="js_arrow_fill fa-solid fa-rocket fieldset__2--iconArrow"></i>
+        <i className="js_arrow_design fa-solid fa-flag fieldset__2--iconArrow arrow-down"></i>
       </legend>
       {props.openFill && (
         <>

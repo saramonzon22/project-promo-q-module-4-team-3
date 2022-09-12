@@ -8,6 +8,7 @@
   align-items: center;
   margin-bottom: 30px;
   border-bottom: solid 1px #d8d8d8;
+  gap: 10px;
 
   &__legend {
     padding-top: 10px;
@@ -19,6 +20,12 @@
     color: #54585a;
     font-family: "Open Sans", sans-serif;
     cursor: pointer;
+.fieldset__3--iconArrow{
+      rotate: 180deg;
+      width: 16px;
+      height: 18px;
+      color: #114e4e;
+    }  
   }
 }
 
@@ -73,6 +80,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
   &__legend {
     padding-top: 10px;
@@ -104,6 +112,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5px;
 }
 .fieldset-4___article--title {
   font-size: 18px;

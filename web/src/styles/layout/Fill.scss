@@ -25,9 +25,10 @@
     height: 18px;
   }
   &--iconArrow {
+    rotate: 180deg;
     width: 16px;
     height: 18px;
-    color: $dark-green;
+    color: #114e4e;
   }
   &--title {
     text-transform: uppercase;

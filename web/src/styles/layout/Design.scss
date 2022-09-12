@@ -32,6 +32,7 @@
     height: 18px;
   }
   &--iconArrow {
+    rotate: 180deg;
     width: 16px;
     height: 18px;
     color: #114e4e;
@@ -123,6 +124,47 @@
   }
 }
 
-// input[type='radio']:checked:after{
-//     background-color: grey;
-// }
+.pantone4 {
+  width: 117px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  &__first {
+    width: 30px;
+    height: 25px;
+    background-color: #D70270;
+  }
+  &__second {
+    width: 30px;
+    height: 25px;
+    background-color: #744F97;
+  }
+
+  &__third {
+    width: 30px;
+    height: 25px;
+    background-color: #0039A9;
+  }
+}
+.pantone5 {
+  width: 117px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  &__first {
+    width: 30px;
+    height: 25px;
+    background-color: #55CDFC;
+  }
+  &__second {
+    width: 30px;
+    height: 25px;
+    background-color: white;
+  }
+
+  &__third {
+    width: 30px;
+    height: 25px;
+    background-color: #F7A8B8;
+  }
+}
