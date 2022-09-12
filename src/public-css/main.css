@@ -11,10 +11,8 @@
     align-items: center;
 }
 .preview-card {
-    background-image:url(../../static/media/roller.0692af01d39058274989.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     width: 40vw;
     height: 70vh;
     display: flex;
