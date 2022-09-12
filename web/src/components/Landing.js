@@ -1,4 +1,4 @@
-import Logo from "../images/commit_cards_logo.png";
+import Logo from "../images/logo-tech.png";
 import { Link } from "react-router-dom";
 import "../styles/layout/Landing.scss";
 

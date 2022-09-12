@@ -1,4 +1,4 @@
-import logo from "../images/commit_land_logo.png";
+import logo from "../images/logo-nombre.png";
 import '../styles/layout/Header.scss';
 
 function Header() {

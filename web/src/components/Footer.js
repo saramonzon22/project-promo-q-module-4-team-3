@@ -3,7 +3,7 @@ import '../styles/layout/Footer.scss';
 
 function Footer() {
     return (<footer className="footer">
-        <p className="footer__copyright">Commit Land Cards ©2022</p>
+        <p className="footer__copyright">Commit Land Cards - DiversiTech ©2022</p>
         <figure className="footer__logo">
             <img
                 className="footer__image"
