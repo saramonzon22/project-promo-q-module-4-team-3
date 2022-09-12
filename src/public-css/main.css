@@ -31,8 +31,6 @@
     height: 340px;
     background-color: white;
     font-family: "Montserrat", sans-serif;
-
-
 }
 .card__name {
     font-size: 18px;
@@ -40,7 +38,6 @@
     margin-left: 20px;
     padding-top: 21px;
     text-align: left;
-    color: #114e4e;
 }
 .card__job {
     font-size: 16px;
@@ -83,7 +80,9 @@
     background-color: #114e4e;
     margin-top: 8px;
     position: absolute;
-
+}
+.palette1 .card__name {
+    color: #114e4e;
 }
 .palette1 .socialmedia__icon {
     color: #114e4e;
@@ -96,7 +95,24 @@
     margin-top: 8px;
     position: absolute;
 }
+.palette2 .card__name {
+    color: #420101;
+}
 .palette2 .socialmedia__icon {
     color: #420101;
     border:solid 2px #e95626;
+}
+.palette3 .rectangle {
+    width: 5px;
+    height: 50px;
+    background-color: #eab052;
+    margin-top: 8px;
+    position: absolute;
+}
+.palette2 .card__name {
+    color: #3e5b65;
+}
+.palette2 .socialmedia__icon {
+    color: #3e5b65;
+    border:solid 2px #6b6b6b;
 }
