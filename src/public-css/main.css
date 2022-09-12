@@ -28,7 +28,7 @@
     flex-direction: column;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
     width: 240px;
-    height: 320px;
+    height: 340px;
     background-color: white;
     font-family: "Montserrat", sans-serif;
 
@@ -63,7 +63,9 @@
     flex-direction: row;
     gap: 15px;
     list-style: none;
-    margin-left: 20px;
+    height: 50px;
+    justify-content: center;
+    align-items: flex-end;
     color: #114e4e;
     text-decoration: none;
 }
@@ -77,10 +79,24 @@
 }
 .palette1 .rectangle {
     width: 5px;
-    height: 42px;
+    height: 50px;
     background-color: #114e4e;
+    margin-top: 8px;
+    position: absolute;
+
 }
 .palette1 .socialmedia__icon {
     color: #114e4e;
     border:solid 2px #a2deaf;
+}
+.palette2 .rectangle {
+    width: 5px;
+    height: 50px;
+    background-color: #bd1010;
+    margin-top: 8px;
+    position: absolute;
+}
+.palette2 .socialmedia__icon {
+    color: #420101;
+    border:solid 2px #e95626;
 }
