@@ -7,24 +7,25 @@
     text-align: center;
 
     &--title {
-      color: $main-orange;
-      font-family: "Merriweather", serif;
-      font-size: 19.2px;
+      color: #F7A8B8;
+      font-family: 'Dancing Script', cursive;
+      font-size: 26px;
+      font-weight: 600;
       align-self: center;
       @media all and (min-width: 768px) {
-        font-size: 24px;
+        font-size: 30px;
         
       }
     }
     &--parragraph {
-      font-family: "Open Sans", sans-serif;
+      font-family: 'Montserrat', sans-serif;
       color: $dark-green;
-      font-size: 12.8px;
+      font-size: 18px;
       line-height: 1.5;
       max-width: 39ch;
       margin-top: 10px;
       @media all and (min-width: 768px) {
-        font-size: 16px;
+        font-size: 20px;
       }
     }
   }
@@ -71,7 +72,7 @@
   &__button {
     width: 129px;
     height: 32px;
-    background-color: $medium-green;
+    background-color: #744F97;
     border-radius: 30px;
     padding: 10px;
     text-align: center;
@@ -96,6 +97,6 @@
 
 .landing__icon {
   height: 32px;
-  color: $main-orange;
+  color: #55CDFC;
   
 }

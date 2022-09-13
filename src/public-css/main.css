@@ -20,6 +20,12 @@
     align-items: center;
     border: 5px ridge #114e4e;
     border-radius: 15px;
+@media all and (min-width: 768px) {
+        width: 50%;
+        height: 80vh;
+        margin: 20px 40px 20px 30px;
+        border-radius: 6px;
+      }
 }
 .card {
     display: flex;

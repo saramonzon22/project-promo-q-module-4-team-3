@@ -16,8 +16,7 @@ function Landing() {
       <article className="landing__article">
         <h1 className="landing__article--title">Crea tu tarjeta de visita</h1>
         <p className="landing__article--parragraph">
-          Crea mejores contactos profesionales mientras disfrutas de nuestras
-          increíbles atracciones
+          Para dar voz a las minorías en el mundo tecnológico
         </p>
       </article>
       <section className="landing__section">
