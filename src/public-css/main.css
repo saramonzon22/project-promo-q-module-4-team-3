@@ -20,9 +20,11 @@
     align-items: center;
     border: 5px ridge #114e4e;
     border-radius: 15px;
-@media all and (min-width: 768px) {
-        width: 50%;
-        height: 80vh;
+
+}
+@media all and (max-width: 768px) {
+    .preview-card{
+        width: 85vw;
         margin: 20px 40px 20px 30px;
         border-radius: 6px;
       }
